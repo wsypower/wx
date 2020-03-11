@@ -2,7 +2,7 @@
 <v-custom bgColor="bg-gradual-blue">
   <view slot="content">空白模板</view>
 </v-custom>
-<!-- 头部导航栏 -->
+<!-- 主体内容 -->
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
@@ -19,4 +19,3 @@
 </view>
 <!-- tabbar 导航栏 -->
 <v-tabbar></v-tabbar>
-<!-- tabbar 导航栏 -->
