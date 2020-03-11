@@ -1,3 +1,5 @@
 {
-  "usingComponents": { "v-tabbar": "../../components/tabbar/tabbar" }
+  "usingComponents": {
+    "v-tabbar": "../../components/tabbar/tabbar"
+  }
 }
