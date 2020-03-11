@@ -1,0 +1,14 @@
+{
+  "name": "wx_program",
+  "version": "0.1.0-alpha.1",
+  "description": "天翼城管-微信小程序的模板",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "weiyafei <2553241022@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vant/weapp": "^1.0.7"
+  }
+}
