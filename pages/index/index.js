@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
 const app = getApp();
-
 Page({
   data: {
     StatusBar: app.globalData.StatusBar,
@@ -11,6 +10,10 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse("button.open-type.getUserInfo")
   },
+  //触发tab事件
+  onMyEvent: function(e) {
+    console.log(e); // 自定义组件触发事件时提供的detail对象
+  },
   //事件处理函数
   bindViewTap() {
     wx.navigateTo({
@@ -18,6 +21,7 @@ Page({
     });
   },
   onLoad() {
+    console.log(wx.pro);
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

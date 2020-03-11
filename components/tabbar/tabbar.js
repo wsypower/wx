@@ -1,4 +1,5 @@
 const app = getApp();
+
 Component({
   options: {
     addGlobalClass: true
@@ -20,6 +21,8 @@ Component({
    */
   methods: {
     NavChange(e) {
+      console.log(123);
+      this.triggerEvent("myevent", [1, 2, 3, 4, 5]);
       this.setData({
         PageCur: e.currentTarget.dataset.cur
       });
