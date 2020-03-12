@@ -1,4 +1,5 @@
 import { promisifyAll } from "/plugins/promisify/index";
+
 // promisify all wx's api
 // 添加pro到wx内
 promisifyAll();

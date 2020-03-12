@@ -1,3 +1,4 @@
+import axios from "../../miniprogram_npm/wx-mini-program-axios/index.js";
 //index.js
 //获取应用实例
 const app = getApp();
@@ -21,7 +22,16 @@ Page({
     });
   },
   onLoad() {
-    console.log(wx.pro);
+    axios
+      .post("http://lfyy.vipgz5.idcfengye.com/api/haircut/getInitData")
+      .then(function(response) {
+        console.log(111);
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(123);
+        console.log(error);
+      });
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
